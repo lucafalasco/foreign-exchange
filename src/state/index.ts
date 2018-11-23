@@ -1,8 +1,8 @@
 import { types as t, Instance, flow } from 'mobx-state-tree'
 import { RouterModel } from 'mst-react-router'
 import api from '../api'
+import store from 'store'
 
-const DATA_REFRESH_RATE: number = 10000
 const amountFormatter = (amount: number) => parseFloat(amount.toFixed(2))
 
 const ExchangeRatesModel = t.model({
@@ -114,8 +114,13 @@ export const State = t
     }
 
     const fetchRates = flow(function*() {
-      const result = yield api.fetchLatestRates()
-      updateRates(result.rates)
+      if (!store.get('rates')) {
+        const result = yield api.fetchLatestRates()
+        updateRates(result.rates)
+        store.set('rates', result.rates)
+      } else {
+        updateRates(store.get('rates'))
+      }
     })
 
     return {
@@ -133,7 +138,6 @@ export const State = t
   .actions(self => {
     function afterCreate() {
       self.fetchRates()
-      setInterval(self.fetchRates, DATA_REFRESH_RATE)
     }
     return { afterCreate }
   })
