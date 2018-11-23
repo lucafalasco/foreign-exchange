@@ -14,9 +14,9 @@ class Rates extends React.Component<IState> {
     const { currencyFrom, exchangeRates } = this.props.state
 
     return (
-      <div className="relative w-100 h-100 flex flex-column justify-center items-center f2">
-        <div className="absolute top-2 mh-auto link blue">Rates</div>
-        <Link className="absolute top-2 right-2 link blue" to="/">
+      <div className="relative w-100 h-100 flex flex-column justify-center items-center f2 bg-black white">
+        <div className="absolute top-2 mh-auto link fw7">Rates</div>
+        <Link className="absolute top-2 right-2 link white" to="/">
           ✕
         </Link>
         {without(CURRENCIES_LIST, currencyFrom).map(currency => (

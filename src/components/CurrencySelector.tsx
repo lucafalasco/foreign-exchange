@@ -29,10 +29,14 @@ class CurrencySelector extends React.Component<IProps> {
     } = this.props
     return (
       <div
-        className={`w-100 h-100 pa3 pa4-m pa6-l flex justify-between items-center mv2 ${className ||
+        className={`w-100 h-100 pa3 pa4-m pa6-l flex justify-between items-center ${className ||
           ''}`}
       >
-        <Select label={selectedCurrency} className="fw5 w4">
+        <Select
+          label={selectedCurrency}
+          className="fw5 w4"
+          childrenClassName="black ba br2 overflow-hidden"
+        >
           {currencies.map((currency, i) => (
             <div
               key={i}

@@ -74,6 +74,7 @@ class Exchange extends React.Component<IState> {
     return (
       <div className="relative w-100 h-100 flex flex-column justify-center items-center f2">
         <CurrencySelector
+          className="bg-black white"
           currencies={CURRENCIES_LIST}
           selectedCurrency={currencyFrom}
           onCurrencyChange={this.setCurrencyFrom}
@@ -83,11 +84,11 @@ class Exchange extends React.Component<IState> {
           focus={focusedInput.from}
           sign="-"
         />
-        <div className="w-100 absolute left-0 ma2 pa3 pa4-m pa6-l">
+        <div className="w-100 absolute left-0 pa3 pa4-m pa6-l">
           <ButtonInvert handleClick={swapFromTo} />
           <Link
             to="/rates"
-            className="flex justify-center items-center absolute absolute--fill link m-auto bg-white blue ba bw1 br-pill b--light-gray f4"
+            className="flex justify-center items-center absolute absolute--fill link m-auto bg-white black ba b--black bw1 br-pill bg-yellow f4 fw5 shadow-1"
             style={{ width: 200, height: 50 }}
           >
             {`${CURRENCY_TO_SYMBOL_MAP.get(currencyFrom)} 1 = ${CURRENCY_TO_SYMBOL_MAP.get(
@@ -96,7 +97,7 @@ class Exchange extends React.Component<IState> {
           </Link>
         </div>
         <CurrencySelector
-          className="bg-light-gray"
+          className="bg-yellow"
           currencies={CURRENCIES_LIST}
           selectedCurrency={currencyTo}
           onCurrencyChange={this.setCurrencyTo}

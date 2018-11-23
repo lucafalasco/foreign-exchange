@@ -85,7 +85,7 @@ class ResizableInput extends React.Component<IProps, IState> {
           {...props}
           ref={this.input}
           className={classes}
-          style={{ ...style, font: 'inherit', width: inputWidth }}
+          style={{ ...style, font: 'inherit', color: 'inherit', width: inputWidth }}
           type={type}
           value={displayValue.toString()}
           autoFocus={focus}

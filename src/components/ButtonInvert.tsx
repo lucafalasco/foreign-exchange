@@ -9,7 +9,7 @@ class ButtonInvert extends React.Component<IProps> {
   public render() {
     return (
       <div
-        className="flex justify-center items-center lh-solid bg-white blue ba bw1 br-100 b--light-gray pointer fw1"
+        className="flex justify-center items-center lh-solid ba b--black bw1 bg-yellow br-100 pointer fw1 shadow-1"
         style={{ width: 50, height: 50 }}
         onClick={this.props.handleClick}
       >
