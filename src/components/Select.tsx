@@ -5,7 +5,7 @@ import Scrollbars from 'react-custom-scrollbars'
 import ArrowDropdown from '../assets/arrow-dropdown.svg'
 
 const disabledStyle = 'o-50 pointer-events-none'
-const defaultStyle = 'b--black br1'
+const defaultStyle = 'b--blue br1'
 const defaultChildrenStyle = 'shadow-4 bg-white'
 
 interface IProps {

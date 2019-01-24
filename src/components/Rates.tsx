@@ -14,8 +14,8 @@ class Rates extends React.Component<IState> {
     const { currencyFrom, exchangeRates } = this.props.state
 
     return (
-      <div className="relative w-100 h-100 flex flex-column justify-center items-center f2 bg-black white">
-        <div className="absolute top-2 mh-auto link fw7">Rates</div>
+      <div className="relative w-100 h-100 flex flex-column justify-center items-center f2 bg-blue white">
+        <div className="absolute top-2 mh-auto link fw7">RATES</div>
         <Link className="absolute top-2 right-2 link white" to="/">
           ✕
         </Link>
