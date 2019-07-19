@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import { omit, noop } from 'lodash'
 
 const disabledStyle = 'o-50 pointer-events-none'
-const defaultStyle = 'b--blue blue bg-white'
+const defaultStyle = 'b--dark dark bg-white'
 
 interface IProps extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string

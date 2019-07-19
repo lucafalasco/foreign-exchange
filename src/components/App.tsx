@@ -6,7 +6,7 @@ class App extends React.Component {
   public render() {
     return (
       <div className="w-100 h-100 absolute absolute--fill m-auto">
-        <Link className="absolute top-2 right-2 z-1 link green f4 fw7" to="/rates">
+        <Link className="absolute top-2 right-2 z-1 link light f4 fw7" to="/rates">
           RATES
         </Link>
         <Exchange />

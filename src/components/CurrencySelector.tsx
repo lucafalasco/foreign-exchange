@@ -35,7 +35,7 @@ class CurrencySelector extends React.Component<IProps> {
         <Select
           label={selectedCurrency}
           className="fw5 w4"
-          childrenClassName="blue ba br2 overflow-hidden"
+          childrenClassName="dark ba br2 overflow-hidden"
         >
           {currencies.map((currency, i) => (
             <div

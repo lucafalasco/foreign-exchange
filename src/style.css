@@ -9,26 +9,26 @@ body,
     Arial, sans-serif;
 }
 
-.green {
-  color: #64ff01;
+.light {
+  color: #f4f3f4;
 }
 
-.bg-green {
-  background-color: #64ff01;
+.bg-light {
+  background-color: #f4f3f4;
 }
 
-.b--green {
-  border-color: #64ff01;
+.b--light {
+  border-color: #f4f3f4;
 }
 
-.blue {
-  color: #1d21aa;
+.dark {
+  color: #333;
 }
 
-.bg-blue {
-  background-color: #1d21aa;
+.bg-dark {
+  background-color: #333;
 }
 
-.b--blue {
-  border-color: #1d21aa;
+.b--dark {
+  border-color: #333;
 }
