@@ -2,7 +2,7 @@ import * as React from 'react'
 import classNames from 'classnames'
 import { noop } from 'lodash'
 import Scrollbars from 'react-custom-scrollbars'
-import ArrowDropdown from '../assets/arrow-dropdown.svg'
+import {ReactComponent as ArrowDropdown} from '../assets/arrow-dropdown.svg'
 
 const disabledStyle = 'o-50 pointer-events-none'
 const defaultStyle = 'b--dark br1'

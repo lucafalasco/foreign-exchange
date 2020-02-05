@@ -1,5 +1,5 @@
 import * as React from 'react'
-import ArrowInvert from '../assets/arrow-invert.svg'
+import { ReactComponent as ArrowInvert } from '../assets/arrow-invert.svg'
 
 interface IProps extends React.InputHTMLAttributes<HTMLInputElement> {
   handleClick: () => void
