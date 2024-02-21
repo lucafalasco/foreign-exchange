@@ -10,7 +10,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^0.28.0",
     "classnames": "^2.2.6",
     "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
